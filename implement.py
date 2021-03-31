@@ -1,3 +1,5 @@
+# Task 1 
+
 import boto3
 
 
@@ -13,16 +15,8 @@ response = sqs_client.create_queue(QueueName="my-new-queue",Attributes={"DelaySe
 
 
 
-
-# Upload audio files to s2 bucket
-
-s3_client = boto3.client('s3')
-with open("Audio1.mp3", "rb") as f:
-    s3_client.upload_fileobj(f, "my-coursework-bucket97", "Audio1.mp3")
-
-
-
-# Upload audio files to s2 bucket
+#TASK 2
+# Upload audio files to s3 bucket
 
 s3_client = boto3.client('s3')
 with open("Audio1.mp3", "rb") as f:
