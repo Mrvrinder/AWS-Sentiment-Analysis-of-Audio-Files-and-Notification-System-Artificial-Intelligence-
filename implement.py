@@ -26,12 +26,10 @@ s3_client = boto3.client('s3')
 with open("Audio2.mp3", "rb") as f:
     s3_client.upload_fileobj(f, "my-coursework-bucket97", "Audio2.mp3")
 
-
 s3_client = boto3.client('s3')
 with open("Audio3.mp3", "rb") as f:
     s3_client.upload_fileobj(f, "my-coursework-bucket97", "Audio3.mp3")
 
-
-    s3_client = boto3.client('s3')
+s3_client = boto3.client('s3')
 with open("Audio4.mp3", "rb") as f:
     s3_client.upload_fileobj(f, "my-coursework-bucket97", "Audio4.mp3")
